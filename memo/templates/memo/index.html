@@ -1,0 +1,47 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{%static 'memo/style.css'%}">
+
+</head>
+<body>
+    <div class="nav">
+        
+
+        <h1 class="title">مذكرة مكاني</h1>
+        {{date}}
+    </div>
+    <form  method="POST" >
+        {%csrf_token%}
+        <div class="container">
+            <div class="pray-cont">
+                <h2>الفجر</h2>
+                {{form.fajr}}
+            </div>
+            <div class="pray-cont">
+                <h2>الظهر</h2>
+                {{form.dohr}}
+            </div>
+            <div class="pray-cont">
+                <h2>العصر</h2>
+                {{form.aser}}
+            </div>
+            <div class="pray-cont">
+                <h2>المغرب</h2>
+                {{form.maghrib}}
+            </div>
+            <div class="pray-cont">
+                <h2>العشاء</h2>
+                {{form.aisha}}
+                
+            </div>  
+        </div>
+        <input type="submit" value="save" class="submit">
+    </form>
+    
+</body>
+</html>
