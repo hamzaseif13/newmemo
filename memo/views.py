@@ -3,7 +3,7 @@ from .models import Day
 from .forms import DayForm
 import datetime
 #git new branch
-
+# master i
 def day(request,pk):
     now = datetime.datetime.now()# current date and time
 
