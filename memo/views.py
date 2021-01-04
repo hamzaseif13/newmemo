@@ -4,6 +4,7 @@ from .forms import DayForm
 import datetime
 #git new branch
 # master i
+#bashtestnigrooooooo
 def day(request,pk):
     now = datetime.datetime.now()# current date and time
 
