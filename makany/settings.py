@@ -25,7 +25,7 @@ SECRET_KEY = 'v@ey)k3(tp450bb*#o*e6whik5&c3v5##+r5&a=m%^@&4i9o&@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['hamzaseif.pythonanywhere.com']
 
 
 # Application definition
@@ -119,3 +119,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT='/home/hamzaseif/makany/static'
